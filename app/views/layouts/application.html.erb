@@ -11,5 +11,8 @@
 
   <body>
     <%= yield %>
+    <h3>Global Links:</h3>
+    <%= link_to "Goto Users", users_path %><br />
+    <%= link_to "Goto Microposts", microposts_path %>
   </body>
 </html>

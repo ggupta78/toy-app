@@ -8,3 +8,9 @@
 
   <%= button_to "Destroy this user", @user, method: :delete %>
 </div>
+<div>
+  <h2>Microposts</h2>
+  <% @user.microposts.each do |post| %>
+    <p><%= post.content %></p>
+  <% end %>
+</div>
